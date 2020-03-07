@@ -15,7 +15,7 @@ function Tentando(){
     if ( isMobile ) {
         let target = `whatsapp://send?`
         let datinha;
-        datinha = " Data:" + datapicker.value + ", "
+        datinha = " Data: " + datapicker.value + ", "
         
         target += `phone=5547996298092&`
         
@@ -28,7 +28,7 @@ function Tentando(){
     } else {
         let target = `https://api.whatsapp.com/send?`
         let datinha;
-        datinha = " Data:" + datapicker.value + ", "
+        datinha = " Data: " + datapicker.value + ", "
         
         target += `phone=5547996298092&`
         
