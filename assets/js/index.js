@@ -14,8 +14,10 @@ function Tentando(){
 
     if ( isMobile ) {
         let target = `whatsapp://send?`
-        let datinha = " Data:" + datapicker.value
-            target += `phone=5547996298092&`
+        let datinha;
+        datinha = " Data:" + datapicker.value + ", "
+        
+        target += `phone=5547996298092&`
         
         target += `text=${encodeURIComponent(b.value)}`
         target += `${encodeURIComponent(datinha)}`
@@ -35,8 +37,6 @@ function Tentando(){
         if ( !!message && message.value !== '' ) {
             target += `${encodeURIComponent(message.value)}`
         }
-        
-        
         return target
     }
     
